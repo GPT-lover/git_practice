@@ -1,7 +1,7 @@
 async function loadNotes(){
 
     const response = await fetch(
-        "YOUR_WORKER_URL"
+        "https://proud-wave-617f.williamwu0302.workers.dev/"
     );
 
     const notes = await response.json();
