@@ -1,14 +1,15 @@
-async function loadMessage() {
+async function loadNotes(){
 
     const response = await fetch(
-        "https://proud-wave-617f.williamwu0302.workers.dev/"
+        "YOUR_WORKER_URL"
     );
 
-    const data = await response.json();
+    const notes = await response.json();
+
 
     document.getElementById("message").textContent =
-        data.message;
+        notes[0].content;
 }
 
 
-loadMessage();
+loadNotes();
